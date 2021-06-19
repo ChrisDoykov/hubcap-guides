@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `HUBCAP Maintenance Guides`,
-    description: ``,
+    description: `Website containing guide articles about maintaining the www.hubcap.eu website.`,
     author: `Kristiyan Doykov`,
   },
   plugins: [
