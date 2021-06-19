@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
@@ -6,16 +6,24 @@ const Template = ({ data }) => {
   const post = data.markdownRemark
   const postData = post.frontmatter
 
+  useEffect(() => {
+    if (document) {
+      document.title = `${postData.title} | HUBCAP Guides`
+    }
+  }, [postData.title])
+
   return (
     <Layout>
-      <div>
-        <Link to="/blog">Go Back</Link>
+      <div className="blog-post">
+        <Link to="/" className="blog-post__back">
+          Go Back
+        </Link>
         <hr />
-        <h1>{postData.title}</h1>
-        <h4>
-          Posted by {postData.author} on {postData.date}
-        </h4>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1 className="blog-post__title">{postData.title}</h1>
+        <div
+          className="blog-post__content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </Layout>
   )
@@ -28,8 +36,7 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
-        author
-        date
+        guideNo
       }
     }
   }

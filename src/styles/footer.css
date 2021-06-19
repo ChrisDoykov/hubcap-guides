@@ -1,0 +1,11 @@
+.footer {
+  font-size: 1rem;
+  padding: 0.7rem 0;
+  width: 100%;
+  border-bottom: 1rem solid #fba200;
+}
+
+.footer__copyright {
+  color: #8c43ff;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,18 @@
+.blog {
+  padding: 5rem 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.blog__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.blog__item__link {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.blog__heading {
+  margin-bottom: 3rem;
+}

@@ -19,6 +19,27 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 0 1.0875rem 1.45rem;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: to; */
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 article,
 aside,
 details,
