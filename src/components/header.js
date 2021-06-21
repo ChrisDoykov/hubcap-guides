@@ -4,36 +4,15 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#FBA200`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: "flex",
-      }}
-    >
+  <header className="header">
+    <div className="header__container">
       <StaticImage
-        style={{
-          height: "5rem",
-          width: "5rem",
-          alignSelf: "center",
-        }}
-        src="../images/logo_colour_transparent.png"
+        className="header__logo"
+        src="../images/logo_hubcap.png"
         alt="HUBCAP Logo"
       />
-      <h1 style={{ margin: 0, marginLeft: "1.5rem", alignSelf: "center" }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+      <h1 className="header__title">
+        <Link to="/" className="header__title__link">
           {siteTitle}
         </Link>
       </h1>

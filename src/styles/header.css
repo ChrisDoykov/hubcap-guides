@@ -1,0 +1,46 @@
+.header {
+  background: #fba200;
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .header__container {
+    flex-direction: column;
+  }
+}
+
+.header__logo {
+  max-width: 500px;
+  margin: 0 1.3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .header__logo {
+    margin: 1rem 1.5rem;
+    align-self: center;
+  }
+}
+
+.header__title {
+  margin: 0;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  .header__title {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.header__title__link {
+  color: black;
+  text-decoration: none;
+}
