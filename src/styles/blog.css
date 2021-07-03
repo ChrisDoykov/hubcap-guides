@@ -11,6 +11,32 @@
 .blog__item__link {
   color: black !important;
   text-decoration: none !important;
+  position: relative;
+  padding-left: 2rem;
+  display: flex;
+}
+
+.blog__item__link::before {
+  content: "\00BB";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.blog__item__link h3 {
+  transition: all 0.3s;
+}
+
+.blog__item:hover .blog__item__link h3 {
+  transform: translateX(1rem);
+  color: #0381c2;
+}
+
+.blog__item:hover .blog__item__link::before {
+  color: #fda101;
+  transform: translateX(0.5rem);
 }
 
 .blog__heading {
