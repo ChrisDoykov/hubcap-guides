@@ -15,4 +15,5 @@
 
 .blog-post__content {
   align-self: center;
+  max-width: 100%;
 }

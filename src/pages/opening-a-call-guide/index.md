@@ -80,25 +80,25 @@ The media section html is already configured to work after being uncommented, th
 
 ---
 
-**21.** In the terminal run the command `ng g c PressReleaseArticleX_X` where X_X represents the call number.
+**21.** In the terminal run the command `ng g c PressReleaseArticleXpX` where XpX represents the call number (e.g. 1p3 for Call #1.3).
 
 **22.** Move the newly created folder into the press-release-articles folder.
 
-**23.** Open the `press-releases.component.ts` file located in the `press-releases` folder and located the string of `else if` clauses which looks like this:
+**23.** Open the `press-releases.component.ts` file located in the `press-releases` folder and locate the string of `else if` clauses which looks like this:
 
 ![Else if clauses code](else_if.png "Else if clauses code")
 
-**24.** Add a `else if` clause following the same pattern before the final `else` which corresponds to your call number.
+**24.** Add an `else if` clause following the same pattern before the final `else` which corresponds to your call number.
 
 **25.** Finally, open the `press-releases.component.html` file and add a `<div>` element which represents your call like so:
 
 ```
  <div *ngIf="pressRelease === 'X.X'">
-      <press-release-articleX_x></press-release-articleX_X>
+      <app-press-release-articleXpX></app-press-release-articleXpX>
  </div>
 ```
 
-Where X_X is replaced by the number of your call.
+Where XpX is replaced by the number of your call (e.g. 1p3 for Call #1.3).
 
 **26.** In order to write a page for the press release you can either use one of the previous ones as an example or simply open up the `.component.html` file of the component you created earlier and write your new markup in there.
 
