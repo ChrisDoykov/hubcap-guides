@@ -34,3 +34,5 @@ To add an event to the "Events" page lists and calendar:
 ```
 
 **NOTE:** The component knows how to handle events going in the past, so there's no need to worry about it, it will self-manage and place the event in the "upcoming" or "past" events list after you include it in the events array.
+
+The `recordingLink` property will initially always be left blank, but it should be filled out later when a recording is uploaded to YouTube or elsewhere so people can rewatch from this page as well.

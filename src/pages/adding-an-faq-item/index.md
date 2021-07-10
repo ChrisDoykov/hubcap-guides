@@ -8,7 +8,7 @@ To add an FAQ item to the "FAQ" page under "About" you would need to first decid
 
 **1.** Open the `faq.component.html` file, located in the `faq` folder.
 
-**2.** Scroll to the bottom of the page, before the closing `</section>` tag.
+**2.** Scroll to the bottom of the page before the closing `</section>` tag.
 
 **3.** Firstly, insert the following code to create a new section heading:
 
@@ -27,7 +27,7 @@ To add an FAQ item to the "FAQ" page under "About" you would need to first decid
   </div>
 ```
 
-**4.** Next up, we need to create the "accordion" with questions related to this seciton. Insert the following code below the `<div>` element you just created:
+**4.** Next up, we need to create the "accordion" with questions related to this section. Insert the following code below the `<div>` element you just created:
 
 ```
 <mat-accordion class="faq__content">
