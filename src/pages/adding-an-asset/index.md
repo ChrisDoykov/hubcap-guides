@@ -50,13 +50,24 @@ Adding a new asset (model/tool) to the "Technologies" page list is pretty straig
           "Smart Buildings",
           "Transport"
       ],
-      // Optional field
+      // Optional field (include if only 1 license)
       // This is the text which will appear on the license link
-      license_info_name: "INTO-CPS Association Public License",
-      // Optional field
+      license_text: "INTO-CPS Association Public License",
+      // Optional field (include if only 1 license)
       // This is the actual address of the license link
-      license_info_url:
+      license_url:
         "https://github.com/INTO-CPS-Association/maestro/blob/development/LICENSE",
+      // Optional field (include if multiple licenses)
+      licenses: [
+        {
+          text: 'Commercial License',
+          url: 'wwww.link.to/license'
+        },
+        {
+          text: 'Commercial License 2',
+          url: 'wwww.link.to/license/2'
+        }
+      ],
       // Optional field
       download_link: "https://into-cps-association.github.io/download/",
       // Contact email
