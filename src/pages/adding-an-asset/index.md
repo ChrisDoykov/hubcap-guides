@@ -105,10 +105,24 @@ Adding a new asset (model/tool) to the "Technologies" page list is pretty straig
         "Health",
         "Continuous Integration Testing",
       ],
+      // Optional field (include if only 1 license)
       // This is the text which will appear on the license link
-      license_info_name: "Pay-as-you-go / None (Public) / Anything else",
+      license_text: "INTO-CPS Association Public License",
+      // Optional field (include if only 1 license)
       // This is the actual address of the license link
-      license_info_url: "https://opensource.org/licenses/BSD-2-Clause",
+      license_url:
+        "https://github.com/INTO-CPS-Association/maestro/blob/development/LICENSE",
+      // Optional field (include if multiple licenses)
+      licenses: [
+        {
+          text: 'Commercial License',
+          url: 'wwww.link.to/license'
+        },
+        {
+          text: 'Commercial License 2',
+          url: 'wwww.link.to/license/2'
+        }
+      ],
       // Optional field
       download_link:
         "https://www.fortiss.org/en/research/living-lab/detail/fortissimo",
