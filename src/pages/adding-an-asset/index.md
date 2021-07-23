@@ -6,11 +6,11 @@ path: "/adding-an-asset"
 
 Adding a new asset (model/tool) to the "Technologies" page list is pretty straightforward.
 
-**1.** Open the `technologies.component.ts` file located in the `technologies` folder.
+**1.** Open the `technologies` folder.
 
-**2.** Locate the `models` and `tools` arrays, containing all the currently available models and tools respectively.
+**2.** Locate the `models.ts` and `tools.ts` files which contain the models and tools arrays, respectively.
 
-**3.** If the asset is a **tool** you would need to add an object of the following structure to the `tools` array:
+**3.** If the asset is a **tool**, you would need to add an object of the following structure to the `tools` array in the `tools.ts` file:
 
 ```
 
@@ -76,7 +76,7 @@ Adding a new asset (model/tool) to the "Technologies" page list is pretty straig
 
 ```
 
-**4.** If the asset is a **model** you would need to add an object of the following structure to the `models` array:
+**4.** If the asset is a **model**, you would need to add an object of the following structure to the `models` array in the `models.ts` file:
 
 ```
 {
